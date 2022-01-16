@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#newsCards {
+  padding: 20px;
+}
+
+@media (min-width: 250px) {
+  #carroselImg div div div {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    z-index: 0;
+  }
+  #logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    margin-left: 10px;
+  }
+  #headerMenu {
+    right: 10px;
+    position: fixed;
+    top: 5%;
+  }
+  #navbarBg {
+    background-color: red;
+  }
+  #newsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    z-index: -2;
+  }
+  #newsCards div {
+    margin-bottom: 20px;
+  }
+  .footerDs {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #carroselImg div div div {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    z-index: 0;
+  }
+  #logo {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+    margin-left: 20px;
+  }
+  #headerMenu {
+    right: 50%;
+    position: fixed;
+    top: 15%;
+  }
+  #navbarBg {
+    background-color: transparent;
+  }
+  #newsContainer {
+    margin-top: 120px;
+    z-index: -2;
+  }
+  #newsCards {
+    display: flex;
+    flex-direction: row;
+  }
+  #newsCards div {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .footerDs {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: yellow;
+    bottom: 0;
+    height: 12vh;
+  }
+
+  .footerDs a {
+    margin-top: 15px;
+    height: 6vh;
+    width: 20vh;
+  }
+}
